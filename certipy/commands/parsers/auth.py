@@ -24,6 +24,9 @@ def add_subparser(subparsers: argparse._SubParsersAction) -> Tuple[str, Callable
     )
 
     subparser.add_argument(
+        "-pfx-pass", action="store", help="Password to PFX"
+    )
+    subparser.add_argument(
         "-no-save", action="store_true", help="Don't save TGT to file"
     )
     subparser.add_argument(
